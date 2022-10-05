@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+<body>
+    <script>
+        const name = `Rachmat Ardico Perdana`;
+        const nilai = 50;
+        const firstName = 'Rachmat';
+        const middleName = 'Ardico';
+        const lastName = 'Perdana';
+        const template = `Name : ${firstName} ${middleName} ${lastName}`;
+        const lama = "Name : " + firstName + " " + middleName + " " + lastName;
+
+        console.info(lama);
+        console.info(template);
+
+        const templateExpression = `Name : ${name}, Lulus : ${nilai > 70}`;
+        console.info(templateExpression);
+
+        let multipleLine = `
+        Nama saya Matt, 
+        sekarang menganggur,
+        kegiatannya cuma belajar 
+        sama ngabisin tabungan doang
+        `;
+        let contoh = "Rachmat"
+
+        document.writeln("<pre>");
+        document.writeln(multipleLine);
+        document.writeln("</pre>");
+    </script>
+</body>
+</html>
