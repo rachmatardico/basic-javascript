@@ -17,6 +17,13 @@
         
         let say = sayHello;
         say("Budi");
+        
+        function giveMeName(callback){
+            callback("Matt");
+        }
+
+        giveMeName(sayHello);
+        giveMeName(say);
     </script>
 </body>
 </html>
