@@ -11,7 +11,7 @@
         function sum(name, ...data){
             let total = 0;
             for(const item of data){
-                total+=item;
+                total += item;
             }
             document.writeln(`Total ${name} is ${total}`);
         }
@@ -22,6 +22,16 @@
 
         const values = [10,10,10,10,10];
         sum("Test", ...values);
+
+        function oldSum(){
+            let total = 0;
+            for (const item of arguments){
+                total += item;
+            }
+            document.writeln(`Total is ${total}`);
+        }
+
+        oldSum(1,2,3,4,5);
     </script>
 </body>
 </html>
