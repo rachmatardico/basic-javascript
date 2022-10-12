@@ -10,11 +10,11 @@
     <script>
         const person = {
             name: "Rachmat",
-            sayHello: (name) => {
-                alert(`Hello ${name}, my name is ${person.name}`);
-            }
+            // sayHello: (name) => {
+            //     alert(`Hello ${name}, my name is ${person.name}`);
+            // }
         }
-
+        person.sayHello = (name) => alert(`Hello ${name}`);
         person.sayHello("Budi");
     </script>
 </body>
