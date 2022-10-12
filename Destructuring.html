@@ -84,6 +84,22 @@
             console.info(middleName);
             console.info(lastName);
         }
+
+        {
+            const person = {
+                firstName: "Rachmat",
+                middleName: "Budi",
+                lastName: "Ardico"
+            };
+
+            let {firstName: namaDepan, 
+                middleName: namaTengah = "Ardico", 
+                lastName: namaBelakang = "Perdana"
+            } = person;
+            console.info(namaDepan);
+            console.info(namaTengah);
+            console.info(namaBelakang);
+        }
     </script>
 </body>
 </html>
