@@ -30,10 +30,12 @@
             channel: "Belum ada"
         };
 
-        let {firstName, lastName, address, ...others} = person;
+        let {firstName, lastName, address:{country, city, street}, ...others} = person;
         console.info(firstName);
         console.info(lastName);
-        console.info(address);
+        console.info(city);
+        console.info(street);
+        console.info(country);
         console.info(others);
         }
     </script>
