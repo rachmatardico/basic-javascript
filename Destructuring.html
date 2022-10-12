@@ -19,16 +19,16 @@
 
         {
             const person = {
-            firstName: "Rachmat",
-            lastName: "Ardico",
-            address: {
-                street: "Jalan belum ada",
-                city: "Lampung",
-                country: "Indonesia"
-            },
-            hobby: "Nyangkut",
-            channel: "Belum ada"
-        };
+                firstName: "Rachmat",
+                lastName: "Ardico",
+                address: {
+                    street: "Jalan belum ada",
+                    city: "Lampung",
+                    country: "Indonesia"
+                },
+                hobby: "Nyangkut",
+                channel: "Belum ada"
+            };
 
         let {firstName, lastName, address:{country, city, street}, ...others} = person;
             console.info(firstName);
@@ -50,7 +50,7 @@
                 firstName: "Rachmat",
                 middleName: "Ardico",
                 lastName: "Perdana"
-            }
+            };
             displayPerson(person);
         }
 
@@ -67,6 +67,19 @@
             const names = ["Rachmat", "Budi", "Joko"];
             const [firstName, middleName = "Ardico", lastName = "Perdana"] = names;
             
+            console.info(firstName);
+            console.info(middleName);
+            console.info(lastName);
+        }
+
+        {
+            const person = {
+                firstName: "Rachmat",
+                middleName: "Budi",
+                lastName: "Ardico"
+            };
+
+            let {firstName, middleName = "Ardico", lastName = "Perdana"} = person;
             console.info(firstName);
             console.info(middleName);
             console.info(lastName);
