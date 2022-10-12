@@ -62,6 +62,15 @@
             console.info(sum([1,1]));
             console.info(sum([10,10]));
         }
+
+        {
+            const names = ["Rachmat", "Budi", "Joko"];
+            const [firstName, middleName = "Ardico", lastName = "Perdana"] = names;
+            
+            console.info(firstName);
+            console.info(middleName);
+            console.info(lastName);
+        }
     </script>
 </body>
 </html>
